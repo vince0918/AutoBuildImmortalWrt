@@ -80,16 +80,16 @@ on:
           - xunlong_orangepi-r1-plus
           - xunlong_orangepi-r1-plus-lts
         required: true
-        default: 'friendlyarm_nanopi-r3s'
+        default: 'friendlyarm_nanopi-r4s-enterprise'
       custom_router_ip:
         description: "请设置软路由的管理地址(注意仅对多网口软路由有效) 格式:192.168.x.1 或 10.x.x.1"
         required: true
-        default: "192.168.100.1"
+        default: "10.0.0.1"
       rootfs_partsize:
         description: '选择软件包空间大小'
         required: true
         type: choice
-        default: '1G'
+        default: '2G'
         options:
           - '1G'
           - '2G'
@@ -104,7 +104,7 @@ on:
         description: |
           是否编译 Docker 插件
         required: true
-        default: 'yes'
+        default: 'no'
         type: choice
         options:
           - 'yes'
